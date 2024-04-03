@@ -1,0 +1,56 @@
+<div class="flex flex-col overflow-hidden justify-center w-full bg-amber-400 h-full rounded-3xl p-8" x-data="{ testimonialActive: 1 }">
+  <div>
+    <div class="relative flex flex-col h-full text-left">
+      <div class="relative z-10 h-full">
+        <div class="pb-6 max-w-xl mx-auto h-64">
+          <div x-show.immediate="testimonialActive === 1" style="display: none;">
+            <p class="font-medium leading-6 text-white text-2xl md:text-3xl text-balanc flex gap-2 items-center text-center mx-auto" x-show.transition="testimonialActive == 1" style="display: none;">
+              Antoinette has been instrumental in helping me gain clarity and focus in both my personal and professional life. Her guidance has been invaluable, and I've seen significant improvements in my productivity and overall well-being.
+            </p>
+          </div>
+          <div x-show.immediate="testimonialActive === 2" style="display: none;">
+            <p class="font-medium leading-6 text-white text-2xl md:text-3xl text-balanc flex gap-2 items-center text-center mx-auto" x-show.transition="testimonialActive == 2" style="display: none;">
+              Working with Antoinette has been a transformative experience. Her ability to ask insightful questions and provide actionable advice has helped me break through barriers that were holding me back.
+            </p>
+          </div>
+          <div x-show.immediate="testimonialActive === 3">
+            <p class="font-medium leading-6 text-white text-2xl md:text-3xl text-balanc flex gap-2 items-center text-center mx-auto max-w-md" x-show.transition="testimonialActive == 3">
+              Antoinette's coaching has been a game-changer for me. Her unique approach blends practical strategies with deep introspection, resulting in profound personal growth. 
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center mt-6 lg:my-4">
+          <button @click.prevent="testimonialActive = 1" class="inline-block mx-2 font-bold text-center rounded-full shadow-xs focus:outline-none focus:ring-2 size-12 opacity-50" :class="{'size-12 opacity-50 ': testimonialActive != 1, 'opacity-100 text-white': testimonialActive == 1 }">
+            <img class="inline-block size-12 rounded-full grayscale border" src="/avatar1.png" alt="#_" />
+          </button>
+          <button @click.prevent="testimonialActive = 2" class="inline-block mx-2 font-bold text-center rounded-full shadow-xs focus:outline-none focus:ring-2 size-12 opacity-50" :class="{'size-12 opacity-50 ': testimonialActive != 2, 'opacity-100 ': testimonialActive == 2 }">
+            <img class="inline-block size-12 rounded-full grayscale border" src="/avatar2.png" alt="#_" />
+          </button>
+          <button @click.prevent="testimonialActive = 3" class="inline-block mx-2 font-bold text-center rounded-full shadow-xs focus:outline-none focus:ring-2 opacity-100 text-white" :class="{'size-12 opacity-50 ': testimonialActive != 3, 'opacity-100 text-white': testimonialActive == 3 }">
+            <img class="inline-block size-12 rounded-full grayscale border" src="/avatar3.png" alt="3_r" />
+          </button>
+        </div>
+        <div class="flex justify-center px-4 pt-4 pb-6 md:py-6">
+          <div class="text-center" x-show="testimonialActive == 1" style="display: none;">
+            <h2 class="text-white text-sm font-medium lg:text-base">
+              John Doe
+            </h2>
+            <a href="#" class="text-xs text-white">CEO, ABC Company</a>
+          </div>
+          <div class="text-center" x-show="testimonialActive == 2" style="display: none;">
+            <h2 class="text-white text-sm font-medium lg:text-base">
+              Jane Smith
+            </h2>
+            <a href="#" class="text-xs text-white">Entrepreneur</a>
+          </div>
+          <div class="text-center" x-show="testimonialActive == 3">
+            <h2 class="text-white text-sm font-medium lg:text-base">
+              Michael Johnson
+            </h2>
+            <a href="#" class="text-xs text-white">Small Business Owner</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

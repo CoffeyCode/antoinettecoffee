@@ -21,8 +21,17 @@ export default defineConfig({
     storyblok({
       accessToken: env.STORYBLOK_TOKEN,
       components: {
+        content: "storyblok/Content",
+        cta: "storyblok/Cta",
+        faq: "storyblok/Faq",
+        footer: "storyblok/Footer",
+        how: "storyblok/How",
         intro: "storyblok/Intro",
-        page: "storyblok/page",
+        pricing: "storyblok/Pricing",
+        signUpForm: "storyblok/SignUpForm",
+        testimonials: "storyblok/Testimonials",
+        thankYou: "storyblok/ThankYou",
+        yourIn: "storyblok/YourIn",
       },
       apiOptions: {
         // Choose your Storyblok space region
