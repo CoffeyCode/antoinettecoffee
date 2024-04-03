@@ -1,0 +1,44 @@
+---
+import YourIn from "./YourIn.astro";
+---
+
+<section class="overflow-hidden relative">
+  <div class="p-4 lg:p-8 lg:pb-24 max-w-7xl mx-auto relative mt-20 md:mt-0">
+    <div class="grid grid-cols-1 gap-2 mb-2">
+      <YourIn />
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+      <section
+        class="bg-gray-200 duration-300 flex flex-col xl:col-span-2 justify-between rounded-3xl h-full text-black p-8">
+        <div>
+          <div class="mb-6">
+            <p class="text-2xl text-black mt-8 xl:text-4xl">Here Are Your Next Steps:</p>
+            <ol class="flex flex-col mt-4 text-base text-black gap-y-4 list-decimal list-inside" role="list">
+              <li class="text-xl flex flex-col items-start gap-2 xl:text-2xl">             
+                1. Go straight to your inbox to download your Wealthy Woman mediation now
+              </li>
+              <li class="text-xl flex flex-col items-start gap-2 xl:text-2xl">
+                2. Block off your calendar for 7th December from 2pm to 5pm GMT/ 9am to 12pm EST
+              </li>
+              <li class="text-xl flex flex-col items-start gap-2 xl:text-2xl">
+                3. Check your inbox daily to start activating your abundance and learn to manifest immediately
+              </li>
+              <li class="text-xl flex flex-col items-start gap-2 xl:text-2xl">
+                4. Join the special LinkedIn group here where the event is being held
+              </li>
+            </ol>
+
+          </div>
+            <div>
+              <a
+                title="link to checkout"
+                class="rounded-xl px-8 h-16 py-2 font-semibold transition-all text-xl flex items-center justify-between bg-orange-600 text-white b focus:ring-2 focus:ring-black focus:ring-offset-2 ring-offset-gray-200 hover:bg-black hover:text-white duration-300"
+                href="https://breeew.com/api/stripe/checkout-session-link/michael?prices=price_1OlEwhF2JhswpgH2ua7bRfRA"
+                >Get started <span>&rarr;</span></a
+              >
+            </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
