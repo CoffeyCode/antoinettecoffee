@@ -1,22 +1,15 @@
----
-import { storyblokEditable} from '@storyblok/astro'
-
-const { blok } = Astro.props
----
-
 <div class="flex flex-col gap-2">
   <div class="bg-green-600 rounded-3xl p-8">
-    <p class="text-3xl leading-6 text-white font-display">Antoinette Coffey</p>
-    <p class="text-sm mt-8 text-white">X spots left</p>
+    <p class="text-4xl leading-6 text-white font-display">Antoinette Coffey</p>
     <h2
-      class="text-4xl mt-12 tracking-tighter  font-display font-normal md:text-8xl lg:text-6xl xl:text-6xl text-blance text-white">
+      class="text-3xl mt-12 tracking-tighter  font-display font-normal md:text-8xl lg:text-6xl xl:text-6xl text-blance text-white">
       Coaches Driven To Succeed
     </h2>
   </div>
   <div class="bg-blue-400 rounded-3xl p-8 text-xl text-white">
     <div class="space-y-4">
-      <p {...storyblokEditable(blok)}>
-        {blok.intro}
+      <p>
+        Discover the specific tools all successful coaches use to generate, nurture and convert leads into dreamy clients
       </p>
     </div>
     <div

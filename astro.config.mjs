@@ -2,12 +2,19 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 import storyblok from "@storyblok/astro";
+import basicSsl from "@vitejs/plugin-basic-ssl";
 import { loadEnv } from "vite";
 const env = loadEnv("", process.cwd(), "STORYBLOK");
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://yoursite.com/",
+  vite: {
+    plugins: [basicSsl()],
+    server: {
+      https: true,
+    },
+  },
   integrations: [
     tailwind(),
     sitemap(),
@@ -15,6 +22,7 @@ export default defineConfig({
       accessToken: env.STORYBLOK_TOKEN,
       components: {
         intro: "storyblok/Intro",
+        page: "storyblok/page",
       },
       apiOptions: {
         // Choose your Storyblok space region
@@ -23,4 +31,3 @@ export default defineConfig({
     }),
   ],
 });
-
