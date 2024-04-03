@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@astrojs/preact':
     specifier: ^3.1.0
-    version: 3.1.2(@babel/core@7.24.3)(preact@10.20.1)(vite@5.2.7)
+    version: 3.1.2(@babel/core@7.24.3)(preact@10.20.1)(vite@5.2.8)
   '@astrojs/sitemap':
     specifier: ^3.1.1
     version: 3.1.2
@@ -17,6 +17,9 @@ dependencies:
   '@astrolib/seo':
     specifier: 1.0.0-beta.5
     version: 1.0.0-beta.5(astro@4.5.14)
+  '@storyblok/astro':
+    specifier: ^4.0.4
+    version: 4.0.4(astro@4.5.14)
   astro:
     specifier: ^4.4.2
     version: 4.5.14
@@ -26,6 +29,9 @@ dependencies:
   tailwind-scrollbar-hide:
     specifier: ^1.1.7
     version: 1.1.7
+  vite:
+    specifier: ^5.2.8
+    version: 5.2.8
 
 packages:
 
@@ -75,7 +81,7 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/preact@3.1.2(@babel/core@7.24.3)(preact@10.20.1)(vite@5.2.7):
+  /@astrojs/preact@3.1.2(@babel/core@7.24.3)(preact@10.20.1)(vite@5.2.8):
     resolution: {integrity: sha512-DIxlwbCkywakf+O3JtJ1h96cFOAY8fFXmkyl9aDuY36EYN3brhX+kmGFX87ZQGlzSD6SBXOscADILREhF33eFw==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
@@ -83,7 +89,7 @@ packages:
     dependencies:
       '@babel/plugin-transform-react-jsx': 7.23.4(@babel/core@7.24.3)
       '@babel/plugin-transform-react-jsx-development': 7.22.5(@babel/core@7.24.3)
-      '@preact/preset-vite': 2.8.2(@babel/core@7.24.3)(preact@10.20.1)(vite@5.2.7)
+      '@preact/preset-vite': 2.8.2(@babel/core@7.24.3)(preact@10.20.1)(vite@5.2.8)
       '@preact/signals': 1.2.3(preact@10.20.1)
       babel-plugin-transform-hook-names: 1.0.2(@babel/core@7.24.3)
       preact: 10.20.1
@@ -869,7 +875,7 @@ packages:
     dev: false
     optional: true
 
-  /@preact/preset-vite@2.8.2(@babel/core@7.24.3)(preact@10.20.1)(vite@5.2.7):
+  /@preact/preset-vite@2.8.2(@babel/core@7.24.3)(preact@10.20.1)(vite@5.2.8):
     resolution: {integrity: sha512-m3tl+M8IO8jgiHnk+7LSTFl8axdPXloewi7iGVLdmCwf34XOzEUur0bZVewW4DUbUipFjTS2CXu27+5f/oexBA==}
     peerDependencies:
       '@babel/core': 7.x
@@ -878,7 +884,7 @@ packages:
       '@babel/core': 7.24.3
       '@babel/plugin-transform-react-jsx': 7.23.4(@babel/core@7.24.3)
       '@babel/plugin-transform-react-jsx-development': 7.22.5(@babel/core@7.24.3)
-      '@prefresh/vite': 2.4.5(preact@10.20.1)(vite@5.2.7)
+      '@prefresh/vite': 2.4.5(preact@10.20.1)(vite@5.2.8)
       '@rollup/pluginutils': 4.2.1
       babel-plugin-transform-hook-names: 1.0.2(@babel/core@7.24.3)
       debug: 4.3.4
@@ -888,7 +894,7 @@ packages:
       resolve: 1.22.8
       source-map: 0.7.4
       stack-trace: 1.0.0-pre2
-      vite: 5.2.7
+      vite: 5.2.8
     transitivePeerDependencies:
       - preact
       - supports-color
@@ -923,7 +929,7 @@ packages:
     resolution: {integrity: sha512-KtC/fZw+oqtwOLUFM9UtiitB0JsVX0zLKNyRTA332sqREqSALIIQQxdUCS1P3xR/jT1e2e8/5rwH6gdcMLEmsQ==}
     dev: false
 
-  /@prefresh/vite@2.4.5(preact@10.20.1)(vite@5.2.7):
+  /@prefresh/vite@2.4.5(preact@10.20.1)(vite@5.2.8):
     resolution: {integrity: sha512-iForDVJ2M8gQYnm5pHumvTEJjGGc7YNYC0GVKnHFL+GvFfKHfH9Rpq67nUAzNbjuLEpqEOUuQVQajMazWu2ZNQ==}
     peerDependencies:
       preact: ^10.4.0
@@ -935,7 +941,7 @@ packages:
       '@prefresh/utils': 1.2.0
       '@rollup/pluginutils': 4.2.1
       preact: 10.20.1
-      vite: 5.2.7
+      vite: 5.2.8
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -1070,6 +1076,22 @@ packages:
 
   /@shikijs/core@1.2.4:
     resolution: {integrity: sha512-ClaUWpt8oTzjcF0MM1P81AeWyzc1sNSJlAjMG80CbwqbFqXSNz+NpQVUC0icobt3sZn43Sn27M4pHD/Jmp3zHw==}
+    dev: false
+
+  /@storyblok/astro@4.0.4(astro@4.5.14):
+    resolution: {integrity: sha512-ItSsWnzKzS5med5IUuCGepBYD5/6ZtIyffR5tHm8dkzrqsrk70pwDh08FINUIAALqn4OI89aDIhWL3RXaJAWJw==}
+    peerDependencies:
+      astro: ^3.0.0 || ^4.0.0
+    dependencies:
+      '@storyblok/js': 3.0.7
+      astro: 4.5.14
+      camelcase: 8.0.0
+    dev: false
+
+  /@storyblok/js@3.0.7:
+    resolution: {integrity: sha512-m6MpUhjEpDWMKftyjJhTkthd/I6LZ9xhuT/Wxa1e99Cf4niVC5jgMVPQ5tOsUgn3D8BKNL+6PI3hEj5dGKB9xw==}
+    dependencies:
+      storyblok-js-client: 6.7.1
     dev: false
 
   /@types/babel__core@7.20.5:
@@ -1293,8 +1315,8 @@ packages:
       tsconfck: 3.0.3
       unist-util-visit: 5.0.0
       vfile: 6.0.1
-      vite: 5.2.7
-      vitefu: 0.2.5(vite@5.2.7)
+      vite: 5.2.8
+      vitefu: 0.2.5(vite@5.2.8)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
       zod: 3.22.4
@@ -1485,6 +1507,11 @@ packages:
   /camelcase@7.0.1:
     resolution: {integrity: sha512-xlx1yCK2Oc1APsPXDL2LdlNP6+uu8OCDdhOBSVT279M/S+y75O30C2VuD8T2ogdePBBl7PfPF4504tnLgX3zfw==}
     engines: {node: '>=14.16'}
+    dev: false
+
+  /camelcase@8.0.0:
+    resolution: {integrity: sha512-8WB3Jcas3swSvjIeA2yvCJ+Miyz5l1ZmB6HFb9R1317dt9LCQoswg/BGrmAmkWVEszSrrg4RwmO46qIm2OEnSA==}
+    engines: {node: '>=16'}
     dev: false
 
   /caniuse-lite@1.0.30001605:
@@ -3727,6 +3754,10 @@ packages:
       bl: 5.1.0
     dev: false
 
+  /storyblok-js-client@6.7.1:
+    resolution: {integrity: sha512-VOobZkor6BESji2MJUuO5jTIZeCWMUMR2LZtdSEEAtUDUfKwA88lGqDVMQqtWZ8nD7NzhZ6S7qvdv5Or9HZXRw==}
+    dev: false
+
   /streamx@2.16.1:
     resolution: {integrity: sha512-m9QYj6WygWyWa3H1YY69amr4nVgy61xfjys7xO7kviL5rfIEc2naf+ewFiOA+aEJD7y0JO3h2GoiUv4TDwEGzQ==}
     requiresBuild: true
@@ -4159,8 +4190,8 @@ packages:
       vfile-message: 4.0.2
     dev: false
 
-  /vite@5.2.7:
-    resolution: {integrity: sha512-k14PWOKLI6pMaSzAuGtT+Cf0YmIx12z9YGon39onaJNy8DLBfBJrzg9FQEmkAM5lpHBZs9wksWAsyF/HkpEwJA==}
+  /vite@5.2.8:
+    resolution: {integrity: sha512-OyZR+c1CE8yeHw5V5t59aXsUPPVTHMDjEZz8MgguLL/Q7NblxhZUlTu9xSPqlsUO/y+X7dlU05jdhvyycD55DA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -4194,7 +4225,7 @@ packages:
       fsevents: 2.3.3
     dev: false
 
-  /vitefu@0.2.5(vite@5.2.7):
+  /vitefu@0.2.5(vite@5.2.8):
     resolution: {integrity: sha512-SgHtMLoqaeeGnd2evZ849ZbACbnwQCIwRH57t18FxcXoZop0uQu0uzlIhJBlF/eWVzuce0sHeqPcDo+evVcg8Q==}
     peerDependencies:
       vite: ^3.0.0 || ^4.0.0 || ^5.0.0
@@ -4202,7 +4233,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 5.2.7
+      vite: 5.2.8
     dev: false
 
   /web-namespaces@2.0.1:
