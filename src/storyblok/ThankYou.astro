@@ -1,8 +1,11 @@
 ---
 import YourIn from "./YourIn.astro";
+import { storyblokEditable } from "@storyblok/astro";
+
+const {blok} = Astro.props
 ---
 
-<section class="overflow-hidden relative">
+<section class="overflow-hidden relative" {...storyblokEditable(blok)}>
   <div class="p-4 lg:p-8 lg:pb-24 max-w-7xl mx-auto relative mt-20 md:mt-0">
     <div class="grid grid-cols-1 gap-2 mb-2">
       <YourIn />
@@ -33,8 +36,8 @@ import YourIn from "./YourIn.astro";
               <a
                 title="link to checkout"
                 class="rounded-xl px-8 h-16 py-2 font-semibold transition-all text-xl flex items-center justify-between bg-orange-600 text-white b focus:ring-2 focus:ring-black focus:ring-offset-2 ring-offset-gray-200 hover:bg-black hover:text-white duration-300"
-                href=""
-                >Get started <span>&rarr;</span></a
+                href={blok.stripelink.url}
+                >{blok.calltoaction} <span>&rarr;</span></a
               >
             </div>
         </div>
