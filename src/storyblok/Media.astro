@@ -1,8 +1,6 @@
 ---
 import { storyblokEditable } from "@storyblok/astro";
 const {blok} = Astro.props
-
-console.log(blok.image)
 ---
 
 <div id="work" class="flex flex-col w-full rounded-3xl scroll-mt-24 aspect-square" {...storyblokEditable(blok)} >
