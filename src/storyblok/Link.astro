@@ -1,0 +1,10 @@
+---
+  import { storyblokEditable } from '@storyblok/astro';
+ 
+  const { blok } = Astro.props
+---
+<li { ...storyblokEditable(blok)}>
+  <a href={blok.link} class="hover:text-black">
+    { blok.text }
+  </a>
+</li>
