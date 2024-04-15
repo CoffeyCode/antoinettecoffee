@@ -33,7 +33,7 @@ import YourIn from "./YourIn.astro";
               <a
                 title="link to checkout"
                 class="rounded-xl px-8 h-16 py-2 font-semibold transition-all text-xl flex items-center justify-between bg-orange-600 text-white b focus:ring-2 focus:ring-black focus:ring-offset-2 ring-offset-gray-200 hover:bg-black hover:text-white duration-300"
-                href="https://breeew.com/api/stripe/checkout-session-link/michael?prices=price_1OlEwhF2JhswpgH2ua7bRfRA"
+                href=""
                 >Get started <span>&rarr;</span></a
               >
             </div>
@@ -42,3 +42,25 @@ import YourIn from "./YourIn.astro";
     </div>
   </div>
 </section>
+<script>
+var duration = 15 * 1000;
+var animationEnd = Date.now() + duration;
+var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+function randomInRange(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+var interval = setInterval(function() {
+  var timeLeft = animationEnd - Date.now();
+
+  if (timeLeft <= 0) {
+    return clearInterval(interval);
+  }
+
+  var particleCount = 50 * (timeLeft / duration);
+  // since particles fall down, start a bit higher than random
+  confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } });
+  confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } });
+}, 250);
+</script>

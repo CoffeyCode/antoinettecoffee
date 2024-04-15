@@ -11,12 +11,14 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/db": "^0.10.4",
     "@astrojs/preact": "^3.1.0",
     "@astrojs/sitemap": "^3.1.1",
     "@astrojs/tailwind": "^5.1.0",
     "@astrolib/seo": "1.0.0-beta.5",
     "@storyblok/astro": "^4.0.4",
     "astro": "^4.4.2",
+    "lucia-adapter-astrodb": "^0.0.8",
     "preact": "^10.19.6",
     "tailwind-scrollbar-hide": "^1.1.7",
     "vite": "^5.2.8"
