@@ -27,11 +27,12 @@ export default defineConfig({
         footer: "storyblok/Footer",
         how: "storyblok/How",
         intro: "storyblok/Intro",
-        pricing: "storyblok/Pricing",
+        reward: "storyblok/Reward",
         signUpForm: "storyblok/SignUpForm",
         testimonials: "storyblok/Testimonials",
         thankYou: "storyblok/ThankYou",
         yourIn: "storyblok/YourIn",
+        pricing: "storyblok/Pricing",
       },
       apiOptions: {
         // Choose your Storyblok space region

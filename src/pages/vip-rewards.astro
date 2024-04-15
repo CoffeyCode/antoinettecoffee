@@ -4,13 +4,11 @@ import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro'
 import BaseLayout from '../layouts/BaseLayout.astro'
  
 const storyblokApi = useStoryblokApi()
-const { data } = await storyblokApi.get('cdn/stories/tester', {
+const { data } = await storyblokApi.get('cdn/stories/vip-rewards', {
   version: 'draft',
 })
  
 const story = data.story
-
-console.log(story)
 ---
  
 <BaseLayout>
