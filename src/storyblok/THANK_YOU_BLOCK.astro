@@ -1,6 +1,7 @@
 ---
 import YourIn from "./YOUR_IN_MESSAGE.astro";
 import { storyblokEditable } from "@storyblok/astro";
+import RichTextRenderer from "@storyblok/astro/RichTextRenderer.astro";
 
 const {blok} = Astro.props
 ---
@@ -33,7 +34,7 @@ const {blok} = Astro.props
 
           </div>
           <div>
-{blok.rich_text}
+            <RichTextRenderer richTextData={blok.rich_text}/>
           </div>
             <div>
               <a
