@@ -21,20 +21,20 @@ export default defineConfig({
     storyblok({
       accessToken: env.STORYBLOK,
       components: {
-        content: "storyblok/Content",
-        cta: "storyblok/Cta",
-        faq: "storyblok/Faq",
-        footer: "storyblok/Footer",
-        "heading-block": "storyblok/HeadingBlock",
-        intro: "storyblok/Intro",
-        reward: "storyblok/Reward",
-        signUpForm: "storyblok/SignUpForm",
-        "message-board": "storyblok/Message-Board",
-        thankYou: "storyblok/ThankYou",
-        yourIn: "storyblok/YourIn",
-        pricing: "storyblok/Pricing",
-        media: "storyblok/Media",
-        link: "storyblok/Link",
+        block_container: "storyblok/BLOCK_CONTAINER",
+        call_to_action: "storyblok/CALL_TO_ACTION",
+        questions_and_answers: "storyblok/QUESTIONS_AND_ANSWERS",
+        footer: "storyblok/FOOTER",
+        heading_block: "storyblok/HEADER_BLOCK",
+        intro_to_me: "storyblok/INTRO_TO_ME",
+        reward_link: "storyblok/REWARD_LINK",
+        sign_up_form: "storyblok/SIGN_UP_FORM",
+        message_board: "storyblok/MY_JOURNEY",
+        thank_you_block: "storyblok/THANK_YOU_BLOCK",
+        your_in_message: "storyblok/YOUR_IN_MESSAGE",
+        pricing_pricing: "storyblok/SERVICE_PRICING",
+        media_block: "storyblok/MEDIA_BLOCK",
+        link_block: "storyblok/LINK_BLOCK",
       },
       apiOptions: {
         // Choose your Storyblok space region
@@ -43,4 +43,3 @@ export default defineConfig({
     }),
   ],
 });
-

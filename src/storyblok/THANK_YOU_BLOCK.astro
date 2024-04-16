@@ -1,5 +1,5 @@
 ---
-import YourIn from "./YourIn.astro";
+import YourIn from "./YOUR_IN_MESSAGE.astro";
 import { storyblokEditable } from "@storyblok/astro";
 
 const {blok} = Astro.props
@@ -31,6 +31,9 @@ const {blok} = Astro.props
               </li>
             </ol>
 
+          </div>
+          <div>
+{blok.rich_text}
           </div>
             <div>
               <a
