@@ -17,6 +17,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "@astrolib/seo": "1.0.0-beta.5",
     "@storyblok/astro": "^4.0.4",
+    "@storyblok/js": "^3.0.8",
     "astro": "^4.4.2",
     "lucia-adapter-astrodb": "^0.0.8",
     "preact": "^10.19.6",
