@@ -24,7 +24,6 @@ export default defineConfig({
         block_container: "storyblok/BLOCK_CONTAINER",
         call_to_action: "storyblok/CALL_TO_ACTION",
         questions_and_answers: "storyblok/QUESTIONS_AND_ANSWERS",
-        footer: "storyblok/footer",
         heading_block: "storyblok/HEADER_BLOCK",
         intro_to_me: "storyblok/INTRO_TO_ME",
         reward_link: "storyblok/REWARD_LINK",
