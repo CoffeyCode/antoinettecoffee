@@ -34,7 +34,7 @@ export default defineConfig({
         pricing_pricing: "storyblok/SERVICE_PRICING",
         media_block: "storyblok/MEDIA_BLOCK",
         link_block: "storyblok/LINK_BLOCK",
-        footer: "storyblok/FOOTER",
+        footer: "bottom_links_and_contacts/BOTTOM_LINKS_AND_CONTACTS",
       },
       apiOptions: {
         // Choose your Storyblok space region
