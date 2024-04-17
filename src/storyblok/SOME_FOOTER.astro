@@ -1,0 +1,49 @@
+---
+import StoryblokComponent from '@storyblok/astro/StoryblokComponent.astro';
+import { storyblokEditable} from '@storyblok/astro'
+
+const { blok } = Astro.props
+---
+
+<footer
+  class="grid grid-cols-1 lg:grid-cols-2 gap-2 max-w-7xl mx-auto col-span-full"
+>
+    <div class="p-8 bg-gray-200 rounded-3xl" {...storyblokEditable(blok)}>
+      <h3 class="  font-display text-red-600 text-base lg:text-xl">Socials</h3>
+      <ul role="list" class="mt-4 text-xs flex flex-col gap-2 text-gray-500 uppercase" { ...storyblokEditable(blok)}>
+      <li>
+        <a href=`mailto:${blok.email.replace(' ', '').trim()}` class="hover:text-black">
+          { blok.email }
+        </a>
+      </li>
+      <li>
+        <a href=`tel:${blok.phone.replace(' ', '').trim()}` class="hover:text-black">
+          { blok.phone }
+        </a>
+      </li>
+      {blok.contactLinks?.map(blok => {return <StoryblokComponent blok={blok} />})}
+      </ul>
+    </div>
+
+  <div class="p-8 bg-gray-200 rounded-3xl justify-end flex flex-col">
+    <div>
+      <p class="text-sm text-black">
+        © 2024 Anotoinette Coffey. All rights reserved
+      </p>
+
+      <div class="gap-x-8 gap-y-6 mt-6">
+        <div>
+          <p class="text-sm text-gray-600 lg:col-span-2">
+            This site is not affiliated with Stripe, Astro, or Tailwind Labs, nor is it endorsed or sponsored by them. Built by
+            <a
+              href=""
+              class="text-sm text-black hover:text-accent-300"
+              >Code Craft Collective</a
+            >, this website was crafted using Astro, Tailwind CSS & Alpine JS
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
