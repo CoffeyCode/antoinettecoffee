@@ -9,7 +9,7 @@ const { blok } = Astro.props
   class="grid grid-cols-1 lg:grid-cols-2 gap-2 max-w-7xl mx-auto col-span-full"
 >
     <div class="p-8 bg-gray-200 rounded-3xl" {...storyblokEditable(blok)}>
-      <h3 class="  font-display text-red-600 text-base lg:text-xl">Socials</h3>
+      <h3 class="  font-display text-purple-600 text-base lg:text-xl">Socials</h3>
       <ul role="list" class="mt-4 text-xs flex flex-col gap-2 text-gray-500 uppercase" { ...storyblokEditable(blok)}>
       <li>
         <a href=`mailto:${blok.email.replace(' ', '').trim()}` class="hover:text-black">
