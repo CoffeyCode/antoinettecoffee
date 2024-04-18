@@ -1,6 +1,8 @@
 ---
 import BaseHead from "@/components/BaseHead.astro";
 import Navigation from "@/components/global/Navigation.astro";
+
+const {booking_link, link_text, site_title} = Astro.props
 ---
 
 <html lang="en" class="scroll-smooth selection:bg-black selection:text-white">
@@ -9,7 +11,7 @@ import Navigation from "@/components/global/Navigation.astro";
   </head>
   <body class="bg-gray-100 flex flex-col min-h-screen mx-auto 2xl:max-w-screen-xl relative">
 
-    <Navigation />
+    <Navigation booking_link  = { booking_link } link_text = { link_text } site_title = {site_title}  />
 
     <main class="flex-grow relative">
       <slot />

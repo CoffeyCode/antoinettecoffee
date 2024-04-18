@@ -10,6 +10,6 @@ const { data } = await storyblokApi.get('cdn/stories/home', {
 const story = data.story
 ---
  
-<BaseLayout>
+<BaseLayout booking_link  = { story.content.booking_link.url } link_text = { story.content.link_text } site_title = {story.content.site_title}>
   <StoryblokComponent blok={story.content} />
 </BaseLayout>
